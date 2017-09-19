@@ -34,7 +34,8 @@ public class MainActivity extends AppCompatActivity {
          */
         mWeatherTextView = (TextView) findViewById(R.id.tv_weather_data);
 
-        // TODO (4) Delete the dummy weather data. You will be getting REAL data from the Internet in this lesson.
+        // TODO (4) Delete the dummy weather data. You will be getting REAL data from the
+        // Internet in this lesson.
         /*
          * This String array contains dummy weather data. Later in the course, we're going to get
          * real weather data. For now, we want to get something on the screen as quickly as
@@ -57,20 +58,11 @@ public class MainActivity extends AppCompatActivity {
                 "Mon, May 30 - Post Apocalypse - 15°C / 10°C",
         };
 
-        // TODO (3) Delete the for loop that populates the TextView with dummy data
-        /*
-         * Iterate through the array and append the Strings to the TextView. The reason why we add
-         * the "\n\n\n" after the String is to give visual separation between each String in the
-         * TextView. Later, we'll learn about a better way to display lists of data.
-         */
-        for (String dummyWeatherDay : dummyWeatherData) {
-            mWeatherTextView.append(dummyWeatherDay + "\n\n\n");
-        }
-
         // TODO (9) Call loadWeatherData to perform the network request to get the weather
     }
 
-    // TODO (8) Create a method that will get the user's preferred location and execute your new AsyncTask and call it loadWeatherData
+    // TODO (8) Create a method that will get the user's preferred location and execute your new
+    // AsyncTask and call it loadWeatherData
 
     // TODO (5) Create a class that extends AsyncTask to perform network requests
     // TODO (6) Override the doInBackground method to perform your network requests
